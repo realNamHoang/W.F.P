@@ -29,7 +29,8 @@ namespace W.F.P
             //this.DoubleBuffered = true;
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
-        
+
+        #region UI chance font setting
         private struct ColorChange
         {
             public static Color color1 = Color.FromArgb(172, 126, 241);
@@ -131,5 +132,6 @@ namespace W.F.P
             childForm.Show();
             lblTitlecurrent.Text = childForm.Text;
         }
+        #endregion
     }
 }
