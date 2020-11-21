@@ -23,11 +23,6 @@ namespace W.F.P
             leftcurrentpanel = new Panel();
             leftcurrentpanel.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftcurrentpanel);
-            //Form
-            //this.Text = string.Empty;
-            //this.ControlBox = false;
-            //this.DoubleBuffered = true;
-            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         #region UI chance font setting

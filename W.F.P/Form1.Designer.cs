@@ -64,6 +64,7 @@
             this.Setting.FlatAppearance.BorderSize = 0;
             this.Setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Setting.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.Setting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Setting.ForeColor = System.Drawing.Color.Gainsboro;
             this.Setting.IconChar = FontAwesome.Sharp.IconChar.Tools;
             this.Setting.IconColor = System.Drawing.Color.Gainsboro;
@@ -87,6 +88,7 @@
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton2.ForeColor = System.Drawing.Color.Gainsboro;
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
             this.iconButton2.IconColor = System.Drawing.Color.Gainsboro;
@@ -110,6 +112,7 @@
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Tag;
             this.iconButton1.IconColor = System.Drawing.Color.Gainsboro;
@@ -214,13 +217,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1184, 561);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShawdor);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
             this.Text = "Form1";
             this.panelMenu.ResumeLayout(false);
