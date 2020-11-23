@@ -148,10 +148,6 @@ namespace W.F.P
                 .Property(e => e.MaNuocSX)
                 .IsFixedLength();
 
-            modelBuilder.Entity<SanPham>()
-                .Property(e => e.SoLuong)
-                .IsFixedLength();
-
             modelBuilder.Entity<TheLoai>()
                 .Property(e => e.Maloai)
                 .IsFixedLength();

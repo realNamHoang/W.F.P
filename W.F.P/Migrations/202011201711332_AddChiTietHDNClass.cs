@@ -32,16 +32,15 @@
             Sql(@"IF OBJECT_ID ('dbo.updatesell','TR') is not null
                 Drop TRIGGER dbo.updatesell;
                 GO
-                CREATER TRIGGER [dbo].[updatesell]
+                CREATE TRIGGER [dbo].[updatesell]
                 ON
                 [dbo].[ChiTietHDB]
                 FOR INSERT,UPDATE
                 AS
                 BEGIN
-                    DECLARE @MaGiay nvarchar(10),@number int,@TongThanhTien bigint
-                    SELECT @MaGiay = MaGiayDep ,@number = SoLuong, @TongThanhTien = ThanhTien  FROM INSERTED
-                    UPDATE SanPham SET SoLuong = SoLuong + @number , DonGiaNhap=@TongThanhTien 
-                    WHERE MaGiayDep = @MaGiay
+                    DECLARE @MaGiay nvarchar(10),@number int
+                    SELECT @MaGiay = MaGiayDep ,@number = SoLuong  FROM INSERTED
+                    UPDATE SanPham SET SoLuong = SoLuong - @number WHERE MaGiayDep = @MaGiay
                 End");
 
             CreateTable(
@@ -61,7 +60,7 @@
             Sql(@"IF OBJECT_ID ('dbo.updateimport','TR') is not null
                 Drop TRIGGER dbo.updateimport;
                 GO
-                CREATER TRIGGER [dbo].[updateimport]
+                CREATE TRIGGER [dbo].[updateimport]
                 ON
                 [dbo].[ChiTietHDN]
                 FOR INSERT,UPDATE
@@ -69,7 +68,7 @@
                 BEGIN
                     DECLARE @MaGiay nvarchar(10),@number int,@TongThanhTien bigint
                     SELECT @MaGiay = MaGiayDep ,@number = SoLuong, @TongThanhTien = ThanhTien  FROM INSERTED
-                    UPDATE SanPham SET SoLuong = SoLuong + @number , DonGiaNhap=@TongThanhTien 
+                    UPDATE SanPham SET SoLuong = SoLuong + @number , DonGiaNhap=@TongThanhTien , DonGiaBan = @TongThanhTien * 1.1
                     WHERE MaGiayDep = @MaGiay
                 End");
 
@@ -177,8 +176,10 @@
                         MaCo = c.String(nullable: false, maxLength: 10, fixedLength: true),
                         MaChatLieu = c.String(nullable: false, maxLength: 10, fixedLength: true),
                         MaMau = c.String(nullable: false, maxLength: 10, fixedLength: true),
+                        MaDoiTuong = c.String(nullable: false, maxLength:10 , fixedLength: true),
+                        MaMua=c.String(nullable: false,maxLength:10, fixedLength: true),
                         MaNuocSX = c.String(nullable: false, maxLength: 10, fixedLength: true),
-                        SoLuong = c.String(nullable: false, maxLength: 10, fixedLength: true),
+                        SoLuong = c.Int(nullable: false),
                         Anh = c.String(nullable: false, maxLength: 50),
                         DonGiaNhap = c.Long(nullable: false),
                         DonGiaBan = c.Long(nullable: false),
@@ -206,6 +207,7 @@
             DropTable("dbo.Mua");
             DropTable("dbo.Mau");
             DropTable("dbo.HoaDonNhap");
+            DropTable("dbo.HoaDonBan");
             DropTable("dbo.DoiTuong");
             DropTable("dbo.Co");
             DropTable("dbo.ChiTietHDN");

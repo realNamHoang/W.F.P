@@ -35,11 +35,19 @@ namespace W.F.P
 
         [Required]
         [StringLength(10)]
+        public string MaDoiTuong { get; set; }
+
+        [Required]
+        [StringLength(10)]
+        public string MaMua { get; set; }
+
+        [Required]
+        [StringLength(10)]
         public string MaNuocSX { get; set; }
 
         [Required]
         [StringLength(10)]
-        public string SoLuong { get; set; }
+        public int SoLuong { get; set; }
 
         [Required]
         [StringLength(50)]

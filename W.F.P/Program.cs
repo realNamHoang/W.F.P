@@ -15,10 +15,6 @@ namespace W.F.P
         [STAThread]
         static void Main()
         {
-            using (var db = new TotalData())
-            {
-                db.ChatLieux.Add(new ChatLieu());
-            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

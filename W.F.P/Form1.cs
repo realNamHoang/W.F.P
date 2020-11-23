@@ -105,10 +105,10 @@ namespace W.F.P
             lblTitlecurrent.Text = "Home";
         }
 
-        private void Orders_Click(object sender, EventArgs e)
+        private void Repost_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, ColorChange.color4);
-            OpenChildForm(new FormOrders());
+            OpenChildForm(new FormRepostData());
         }
 
         private void OpenChildForm(Form childForm)

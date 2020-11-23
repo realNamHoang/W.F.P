@@ -1,6 +1,6 @@
 ﻿namespace W.F.P
 {
-    partial class FormOrders
+    partial class FormRepostData
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FormOrders
+            // FormRepostData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(948, 438);
-            this.Name = "FormOrders";
+            this.Name = "FormRepostData";
             this.Text = "FormOrders";
             this.ResumeLayout(false);
 

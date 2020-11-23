@@ -30,12 +30,12 @@
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.Repost = new FontAwesome.Sharp.IconButton();
             this.Setting = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.Products = new FontAwesome.Sharp.IconButton();
+            this.InsertProduct = new FontAwesome.Sharp.IconButton();
             this.BtnHome = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.iconButtonOrder = new FontAwesome.Sharp.IconButton();
             this.lblTitlecurrent = new System.Windows.Forms.Label();
             this.iconCurrent = new FontAwesome.Sharp.IconPictureBox();
             this.panelShawdor = new System.Windows.Forms.Panel();
@@ -48,15 +48,40 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.Repost);
             this.panelMenu.Controls.Add(this.Setting);
-            this.panelMenu.Controls.Add(this.iconButton2);
-            this.panelMenu.Controls.Add(this.iconButton1);
+            this.panelMenu.Controls.Add(this.Products);
+            this.panelMenu.Controls.Add(this.InsertProduct);
             this.panelMenu.Controls.Add(this.BtnHome);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 561);
             this.panelMenu.TabIndex = 0;
+            // 
+            // Repost
+            // 
+            this.Repost.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Repost.FlatAppearance.BorderSize = 0;
+            this.Repost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Repost.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.Repost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Repost.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Repost.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
+            this.Repost.IconColor = System.Drawing.Color.Gainsboro;
+            this.Repost.IconSize = 32;
+            this.Repost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Repost.Location = new System.Drawing.Point(0, 195);
+            this.Repost.Name = "Repost";
+            this.Repost.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.Repost.Rotation = 0D;
+            this.Repost.Size = new System.Drawing.Size(220, 60);
+            this.Repost.TabIndex = 7;
+            this.Repost.Text = "Repost";
+            this.Repost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Repost.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Repost.UseVisualStyleBackColor = true;
+            this.Repost.Click += new System.EventHandler(this.Repost_Click);
             // 
             // Setting
             // 
@@ -82,53 +107,53 @@
             this.Setting.UseVisualStyleBackColor = true;
             this.Setting.Click += new System.EventHandler(this.iconButton6_Click);
             // 
-            // iconButton2
+            // Products
             // 
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
-            this.iconButton2.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton2.IconSize = 32;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 135);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton2.Rotation = 0D;
-            this.iconButton2.Size = new System.Drawing.Size(220, 60);
-            this.iconButton2.TabIndex = 2;
-            this.iconButton2.Text = "Products";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            this.Products.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Products.FlatAppearance.BorderSize = 0;
+            this.Products.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Products.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.Products.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Products.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Products.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
+            this.Products.IconColor = System.Drawing.Color.Gainsboro;
+            this.Products.IconSize = 32;
+            this.Products.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Products.Location = new System.Drawing.Point(0, 135);
+            this.Products.Name = "Products";
+            this.Products.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.Products.Rotation = 0D;
+            this.Products.Size = new System.Drawing.Size(220, 60);
+            this.Products.TabIndex = 2;
+            this.Products.Text = "Products";
+            this.Products.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Products.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Products.UseVisualStyleBackColor = true;
+            this.Products.Click += new System.EventHandler(this.iconButton2_Click);
             // 
-            // iconButton1
+            // InsertProduct
             // 
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Tag;
-            this.iconButton1.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconSize = 32;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 75);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(220, 60);
-            this.iconButton1.TabIndex = 1;
-            this.iconButton1.Text = "Custommers";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.InsertProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.InsertProduct.FlatAppearance.BorderSize = 0;
+            this.InsertProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.InsertProduct.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.InsertProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InsertProduct.ForeColor = System.Drawing.Color.Gainsboro;
+            this.InsertProduct.IconChar = FontAwesome.Sharp.IconChar.Tag;
+            this.InsertProduct.IconColor = System.Drawing.Color.Gainsboro;
+            this.InsertProduct.IconSize = 32;
+            this.InsertProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.InsertProduct.Location = new System.Drawing.Point(0, 75);
+            this.InsertProduct.Name = "InsertProduct";
+            this.InsertProduct.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.InsertProduct.Rotation = 0D;
+            this.InsertProduct.Size = new System.Drawing.Size(220, 60);
+            this.InsertProduct.TabIndex = 1;
+            this.InsertProduct.Text = "Insert Product";
+            this.InsertProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.InsertProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.InsertProduct.UseVisualStyleBackColor = true;
+            this.InsertProduct.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // BtnHome
             // 
@@ -144,7 +169,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.panel1.Controls.Add(this.iconButtonOrder);
             this.panel1.Controls.Add(this.lblTitlecurrent);
             this.panel1.Controls.Add(this.iconCurrent);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -152,24 +176,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(964, 75);
             this.panel1.TabIndex = 1;
-            // 
-            // iconButtonOrder
-            // 
-            this.iconButtonOrder.Dock = System.Windows.Forms.DockStyle.Right;
-            this.iconButtonOrder.FlatAppearance.BorderSize = 0;
-            this.iconButtonOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonOrder.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButtonOrder.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonOrder.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.iconButtonOrder.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonOrder.IconSize = 40;
-            this.iconButtonOrder.Location = new System.Drawing.Point(889, 0);
-            this.iconButtonOrder.Name = "iconButtonOrder";
-            this.iconButtonOrder.Rotation = 0D;
-            this.iconButtonOrder.Size = new System.Drawing.Size(75, 75);
-            this.iconButtonOrder.TabIndex = 3;
-            this.iconButtonOrder.UseVisualStyleBackColor = true;
-            this.iconButtonOrder.Click += new System.EventHandler(this.Orders_Click);
             // 
             // lblTitlecurrent
             // 
@@ -240,14 +246,14 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel BtnHome;
         private FontAwesome.Sharp.IconButton Setting;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton Products;
+        private FontAwesome.Sharp.IconButton InsertProduct;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconPictureBox iconCurrent;
         private System.Windows.Forms.Label lblTitlecurrent;
-        private FontAwesome.Sharp.IconButton iconButtonOrder;
         private System.Windows.Forms.Panel panelShawdor;
         private System.Windows.Forms.Panel panelDesktop;
+        private FontAwesome.Sharp.IconButton Repost;
     }
 }
 

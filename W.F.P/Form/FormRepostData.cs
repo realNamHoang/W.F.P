@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace W.F.P
 {
-    public partial class FormOrders : Form
+    public partial class FormRepostData : Form
     {
-        public FormOrders()
+        public FormRepostData()
         {
             InitializeComponent();
         }

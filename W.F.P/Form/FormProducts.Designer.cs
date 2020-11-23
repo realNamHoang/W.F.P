@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.SanPham1 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.SanPham2 = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.SanPham3 = new System.Windows.Forms.Label();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.SanPham4 = new System.Windows.Forms.Label();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -58,16 +58,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // SanPham1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(95, 271);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Sản phẩm 1";
+            this.SanPham1.AutoSize = true;
+            this.SanPham1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SanPham1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.SanPham1.Location = new System.Drawing.Point(95, 271);
+            this.SanPham1.Name = "SanPham1";
+            this.SanPham1.Size = new System.Drawing.Size(79, 16);
+            this.SanPham1.TabIndex = 1;
+            this.SanPham1.Text = "Sản phẩm 1";
             // 
             // iconPictureBox1
             // 
@@ -90,16 +90,16 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // label2
+            // SanPham2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(329, 271);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Sản phẩm 2";
+            this.SanPham2.AutoSize = true;
+            this.SanPham2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SanPham2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.SanPham2.Location = new System.Drawing.Point(329, 271);
+            this.SanPham2.Name = "SanPham2";
+            this.SanPham2.Size = new System.Drawing.Size(79, 16);
+            this.SanPham2.TabIndex = 1;
+            this.SanPham2.Text = "Sản phẩm 2";
             // 
             // iconPictureBox2
             // 
@@ -122,16 +122,16 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // label3
+            // SanPham3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(559, 271);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Sản phẩm 3";
+            this.SanPham3.AutoSize = true;
+            this.SanPham3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SanPham3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.SanPham3.Location = new System.Drawing.Point(559, 271);
+            this.SanPham3.Name = "SanPham3";
+            this.SanPham3.Size = new System.Drawing.Size(79, 16);
+            this.SanPham3.TabIndex = 1;
+            this.SanPham3.Text = "Sản phẩm 3";
             // 
             // iconPictureBox3
             // 
@@ -154,16 +154,16 @@
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // label4
+            // SanPham4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(780, 271);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 16);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Sản phẩm 4";
+            this.SanPham4.AutoSize = true;
+            this.SanPham4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SanPham4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.SanPham4.Location = new System.Drawing.Point(780, 271);
+            this.SanPham4.Name = "SanPham4";
+            this.SanPham4.Size = new System.Drawing.Size(79, 16);
+            this.SanPham4.TabIndex = 1;
+            this.SanPham4.Text = "Sản phẩm 4";
             // 
             // iconPictureBox4
             // 
@@ -188,10 +188,10 @@
             this.Controls.Add(this.iconPictureBox3);
             this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.iconPictureBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.SanPham4);
+            this.Controls.Add(this.SanPham3);
+            this.Controls.Add(this.SanPham2);
+            this.Controls.Add(this.SanPham1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -214,16 +214,16 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label SanPham1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label SanPham2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label SanPham3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label SanPham4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
     }
 }
