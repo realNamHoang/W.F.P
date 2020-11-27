@@ -1,6 +1,6 @@
 ﻿namespace W.F.P
 {
-    partial class FormRepostData
+    partial class FormRepostHD
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,8 @@
             this.DGVExport = new System.Windows.Forms.DataGridView();
             this.Search = new System.Windows.Forms.Label();
             this.DataSearchBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExport)).BeginInit();
             this.SuspendLayout();
@@ -154,18 +156,38 @@
             this.DataSearchBox.Size = new System.Drawing.Size(156, 20);
             this.DataSearchBox.TabIndex = 2;
             // 
-            // FormRepostData
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(281, 238);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "SearchData";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(370, 235);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(156, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // FormRepostHD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(964, 477);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.DataSearchBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.DGVExport);
             this.Controls.Add(this.guna2DataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormRepostData";
+            this.Name = "FormRepostHD";
             this.Text = "FormOrders";
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExport)).EndInit();
@@ -180,5 +202,7 @@
         private System.Windows.Forms.DataGridView DGVExport;
         private System.Windows.Forms.Label Search;
         private System.Windows.Forms.TextBox DataSearchBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

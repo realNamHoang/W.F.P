@@ -45,6 +45,13 @@
     <Reference Include="FontAwesome.Sharp, Version=5.14.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.14.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.1.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -62,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\FormRepostHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormRepostHD.Designer.cs">
+      <DependentUpon>FormRepostHD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FormRepostData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,8 +129,12 @@
     <Compile Include="repository\TotalData.cs" />
     <Compile Include="service\DatabaseAccess.cs" />
     <Compile Include="service\ExportExcel.cs" />
+    <Compile Include="service\SearchData.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormRepostHD.resx">
+      <DependentUpon>FormRepostHD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormRepostData.resx">
       <DependentUpon>FormRepostData.cs</DependentUpon>

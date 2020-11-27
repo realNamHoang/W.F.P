@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using W.F.P.service;
 
@@ -31,13 +25,14 @@ namespace W.F.P
                 ImageBox.Image = new Bitmap(openFile.FileName);
                 ImageBox.Image = Image.FromFile(openFile.FileName);
                 filedateInsert = Path.GetFileName(openFile.FileName);
-                ImageBox.Image.Save(@"ImageData" + "\\" + filedateInsert);
+                //ImageBox.Image.Save(@Application.StartupPath + "\\ImageData\\" + filedateInsert);
+                ImageBox.Image.Save(@"D:\\program\\CNTT3_59\\CNTT3_59C#\\W.F.P\\W.F.P\\ImageData\\" + filedateInsert);
             }
         }
 
         private void FormProdusterCustommer_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void ButtonAddData_Click(object sender, EventArgs e)

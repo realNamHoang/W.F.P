@@ -309,10 +309,10 @@
             // 
             // FormProdusterCustommer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(948, 438);
+            this.ClientSize = new System.Drawing.Size(964, 477);
             this.Controls.Add(this.RenewButton);
             this.Controls.Add(this.ButtonAddData);
             this.Controls.Add(this.label10);
@@ -337,6 +337,7 @@
             this.Controls.Add(this.MaGiayDepBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ImageBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormProdusterCustommer";
             this.Text = "FormProduster";
             this.Load += new System.EventHandler(this.FormProdusterCustommer_Load);
