@@ -22,7 +22,7 @@ namespace W.F.P
 
         [Required]
         [StringLength(10)]
-        public string MaNCC { get; set; }
+        public string MaKH { get; set; }
 
         public long? TongTien { get; set; }
     }

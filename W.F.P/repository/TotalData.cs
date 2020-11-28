@@ -18,6 +18,7 @@ namespace W.F.P
         public virtual DbSet<Co> Coes { get; set; }
         public virtual DbSet<DoiTuong> DoiTuongs { get; set; }
         public virtual DbSet<HoaDonNhap> HoaDonNhaps { get; set; }
+        public virtual DbSet<HoaDonBan> HoaDonBans { get; set; }
         public virtual DbSet<Mau> Maus { get; set; }
         public virtual DbSet<Mua> Muas { get; set; }
         public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
@@ -78,6 +79,18 @@ namespace W.F.P
 
             modelBuilder.Entity<HoaDonNhap>()
                 .Property(e => e.MaNCC)
+                .IsFixedLength();
+
+            modelBuilder.Entity<HoaDonBan>()
+                .Property(e => e.SoHDB)
+                .IsFixedLength();
+
+            modelBuilder.Entity<HoaDonBan>()
+                .Property(e => e.MaNV)
+                .IsFixedLength();
+
+            modelBuilder.Entity<HoaDonBan>()
+                .Property(e => e.MaKH)
                 .IsFixedLength();
 
             modelBuilder.Entity<Mau>()
