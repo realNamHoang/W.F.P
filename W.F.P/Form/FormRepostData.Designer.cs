@@ -67,11 +67,11 @@
             this.DGVExport.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DGVExport.EnableHeadersVisualStyles = false;
             this.DGVExport.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVExport.Location = new System.Drawing.Point(0, 211);
+            this.DGVExport.Location = new System.Drawing.Point(0, 181);
             this.DGVExport.Name = "DGVExport";
             this.DGVExport.RowHeadersVisible = false;
             this.DGVExport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVExport.Size = new System.Drawing.Size(964, 266);
+            this.DGVExport.Size = new System.Drawing.Size(964, 296);
             this.DGVExport.TabIndex = 0;
             // 
             // Search
@@ -93,6 +93,7 @@
             this.DataSearchBox.Name = "DataSearchBox";
             this.DataSearchBox.Size = new System.Drawing.Size(156, 22);
             this.DataSearchBox.TabIndex = 2;
+            this.DataSearchBox.Enter += new System.EventHandler(this.DataSearchBox_Enter);
             // 
             // ExportExcel
             // 

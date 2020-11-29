@@ -128,5 +128,11 @@ namespace W.F.P
             lblTitlecurrent.Text = childForm.Text;
         }
         #endregion
+
+        private void searchHD_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, ColorChange.color6);
+            OpenChildForm(new FormRepostHD());
+        }
     }
 }

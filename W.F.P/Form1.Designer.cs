@@ -40,6 +40,7 @@
             this.iconCurrent = new FontAwesome.Sharp.IconPictureBox();
             this.panelShawdor = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.searchHD = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrent)).BeginInit();
@@ -48,6 +49,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.searchHD);
             this.panelMenu.Controls.Add(this.Repost);
             this.panelMenu.Controls.Add(this.Setting);
             this.panelMenu.Controls.Add(this.Products);
@@ -77,7 +79,7 @@
             this.Repost.Rotation = 0D;
             this.Repost.Size = new System.Drawing.Size(220, 60);
             this.Repost.TabIndex = 7;
-            this.Repost.Text = "Repost";
+            this.Repost.Text = "Tìm Kiếm Mặt Hàng";
             this.Repost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Repost.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Repost.UseVisualStyleBackColor = true;
@@ -125,7 +127,7 @@
             this.Products.Rotation = 0D;
             this.Products.Size = new System.Drawing.Size(220, 60);
             this.Products.TabIndex = 2;
-            this.Products.Text = "Products";
+            this.Products.Text = "Tổng quan mặt hàng";
             this.Products.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Products.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Products.UseVisualStyleBackColor = true;
@@ -149,7 +151,7 @@
             this.InsertProduct.Rotation = 0D;
             this.InsertProduct.Size = new System.Drawing.Size(220, 60);
             this.InsertProduct.TabIndex = 1;
-            this.InsertProduct.Text = "Insert Product";
+            this.InsertProduct.Text = "Nhập dữ liệu mặt hàng";
             this.InsertProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.InsertProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.InsertProduct.UseVisualStyleBackColor = true;
@@ -184,9 +186,9 @@
             this.lblTitlecurrent.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblTitlecurrent.Location = new System.Drawing.Point(56, 35);
             this.lblTitlecurrent.Name = "lblTitlecurrent";
-            this.lblTitlecurrent.Size = new System.Drawing.Size(45, 16);
+            this.lblTitlecurrent.Size = new System.Drawing.Size(95, 16);
             this.lblTitlecurrent.TabIndex = 1;
-            this.lblTitlecurrent.Text = "Home";
+            this.lblTitlecurrent.Text = "Màn hình chính";
             // 
             // iconCurrent
             // 
@@ -220,6 +222,30 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(964, 477);
             this.panelDesktop.TabIndex = 3;
+            // 
+            // searchHD
+            // 
+            this.searchHD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.searchHD.FlatAppearance.BorderSize = 0;
+            this.searchHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchHD.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.searchHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchHD.ForeColor = System.Drawing.Color.Gainsboro;
+            this.searchHD.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
+            this.searchHD.IconColor = System.Drawing.Color.Gainsboro;
+            this.searchHD.IconSize = 32;
+            this.searchHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.searchHD.Location = new System.Drawing.Point(0, 255);
+            this.searchHD.Name = "searchHD";
+            this.searchHD.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.searchHD.Rotation = 0D;
+            this.searchHD.Size = new System.Drawing.Size(220, 60);
+            this.searchHD.TabIndex = 8;
+            this.searchHD.Text = "Tìm kiếm Hóa Đơn";
+            this.searchHD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.searchHD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.searchHD.UseVisualStyleBackColor = true;
+            this.searchHD.Click += new System.EventHandler(this.searchHD_Click);
             // 
             // Form1
             // 
@@ -256,6 +282,7 @@
         private System.Windows.Forms.Panel panelShawdor;
         private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconButton Repost;
+        private FontAwesome.Sharp.IconButton searchHD;
     }
 }
 

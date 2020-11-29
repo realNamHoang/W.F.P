@@ -28,52 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DGVExport = new System.Windows.Forms.DataGridView();
             this.Search = new System.Windows.Forms.Label();
             this.DataSearchHDBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.DataSearchRequestBox = new System.Windows.Forms.TextBox();
             this.ExportExcel = new FontAwesome.Sharp.IconButton();
+            this.ExtraDataView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExtraDataView)).BeginInit();
             this.SuspendLayout();
             // 
             // DGVExport
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.DGVExport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.DGVExport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.DGVExport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGVExport.BackgroundColor = System.Drawing.Color.White;
             this.DGVExport.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVExport.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVExport.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVExport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVExport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.DGVExport.ColumnHeadersHeight = 48;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVExport.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVExport.DefaultCellStyle = dataGridViewCellStyle15;
             this.DGVExport.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DGVExport.EnableHeadersVisualStyles = false;
             this.DGVExport.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVExport.Location = new System.Drawing.Point(0, 160);
+            this.DGVExport.Location = new System.Drawing.Point(0, 219);
             this.DGVExport.Name = "DGVExport";
             this.DGVExport.RowHeadersVisible = false;
             this.DGVExport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVExport.Size = new System.Drawing.Size(964, 317);
+            this.DGVExport.Size = new System.Drawing.Size(964, 258);
             this.DGVExport.TabIndex = 0;
             // 
             // Search
@@ -115,6 +120,7 @@
             this.DataSearchRequestBox.Name = "DataSearchRequestBox";
             this.DataSearchRequestBox.Size = new System.Drawing.Size(174, 22);
             this.DataSearchRequestBox.TabIndex = 2;
+            this.DataSearchRequestBox.Enter += new System.EventHandler(this.DataSearchRequestBox_Enter);
             // 
             // ExportExcel
             // 
@@ -134,12 +140,48 @@
             this.ExportExcel.Text = "Export to Excel";
             this.ExportExcel.UseVisualStyleBackColor = true;
             // 
+            // ExtraDataView
+            // 
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.ExtraDataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.ExtraDataView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ExtraDataView.BackgroundColor = System.Drawing.Color.White;
+            this.ExtraDataView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ExtraDataView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.ExtraDataView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ExtraDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.ExtraDataView.ColumnHeadersHeight = 48;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ExtraDataView.DefaultCellStyle = dataGridViewCellStyle18;
+            this.ExtraDataView.EnableHeadersVisualStyles = false;
+            this.ExtraDataView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.ExtraDataView.Location = new System.Drawing.Point(12, 104);
+            this.ExtraDataView.Name = "ExtraDataView";
+            this.ExtraDataView.RowHeadersVisible = false;
+            this.ExtraDataView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ExtraDataView.Size = new System.Drawing.Size(679, 100);
+            this.ExtraDataView.TabIndex = 6;
+            // 
             // FormRepostHD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(964, 477);
+            this.Controls.Add(this.ExtraDataView);
             this.Controls.Add(this.ExportExcel);
             this.Controls.Add(this.DataSearchRequestBox);
             this.Controls.Add(this.DataSearchHDBox);
@@ -149,7 +191,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormRepostHD";
             this.Text = "FormOrders";
+            this.Load += new System.EventHandler(this.FormRepostHD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVExport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExtraDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +206,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox DataSearchRequestBox;
         private FontAwesome.Sharp.IconButton ExportExcel;
+        private System.Windows.Forms.DataGridView ExtraDataView;
     }
 }
