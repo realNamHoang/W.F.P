@@ -165,7 +165,25 @@
                         TenNuocSX = c.String(maxLength: 50),
                     })
                 .PrimaryKey(t => t.MaNuocSX);
-            
+
+            CreateTable(
+                "dbo.CongViec",
+                c => new
+                {
+                    MaCV = c.String(nullable: false, maxLength: 10, fixedLength: true),
+                    TenCV = c.String(maxLength: 50),
+                })
+                .PrimaryKey(t => t.MaCV);
+
+            CreateTable(
+                "dbo.KhachHang",
+                c => new
+                {
+                    MaKhach = c.String(nullable: false, maxLength: 10, fixedLength: true),
+                    TenKhach = c.String(maxLength: 50),
+                })
+                .PrimaryKey(t => t.MaKhach);
+
             CreateTable(
                 "dbo.SanPham",
                 c => new

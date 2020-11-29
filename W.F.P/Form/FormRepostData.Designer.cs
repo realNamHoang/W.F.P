@@ -35,6 +35,7 @@
             this.Search = new System.Windows.Forms.Label();
             this.DataSearchBox = new System.Windows.Forms.TextBox();
             this.ExportExcel = new FontAwesome.Sharp.IconButton();
+            this.XemTonKho = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExport)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,6 +95,7 @@
             this.DataSearchBox.Size = new System.Drawing.Size(156, 22);
             this.DataSearchBox.TabIndex = 2;
             this.DataSearchBox.Enter += new System.EventHandler(this.DataSearchBox_Enter);
+            this.DataSearchBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.DataSearchBox_KeyUp);
             // 
             // ExportExcel
             // 
@@ -113,12 +115,32 @@
             this.ExportExcel.Text = "Export to Excel";
             this.ExportExcel.UseVisualStyleBackColor = true;
             // 
+            // XemTonKho
+            // 
+            this.XemTonKho.FlatAppearance.BorderSize = 0;
+            this.XemTonKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.XemTonKho.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.XemTonKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XemTonKho.ForeColor = System.Drawing.Color.Gainsboro;
+            this.XemTonKho.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.XemTonKho.IconColor = System.Drawing.Color.Black;
+            this.XemTonKho.IconSize = 16;
+            this.XemTonKho.Location = new System.Drawing.Point(52, 123);
+            this.XemTonKho.Name = "XemTonKho";
+            this.XemTonKho.Rotation = 0D;
+            this.XemTonKho.Size = new System.Drawing.Size(198, 52);
+            this.XemTonKho.TabIndex = 4;
+            this.XemTonKho.Text = "Tồn Kho";
+            this.XemTonKho.UseVisualStyleBackColor = true;
+            this.XemTonKho.Click += new System.EventHandler(this.XemTonKho_Click);
+            // 
             // FormRepostData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(964, 477);
+            this.Controls.Add(this.XemTonKho);
             this.Controls.Add(this.ExportExcel);
             this.Controls.Add(this.DataSearchBox);
             this.Controls.Add(this.Search);
@@ -126,6 +148,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormRepostData";
             this.Text = "FormOrders";
+            this.Load += new System.EventHandler(this.FormRepostData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVExport)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,5 +161,6 @@
         private System.Windows.Forms.Label Search;
         private System.Windows.Forms.TextBox DataSearchBox;
         private FontAwesome.Sharp.IconButton ExportExcel;
+        private FontAwesome.Sharp.IconButton XemTonKho;
     }
 }

@@ -16,5 +16,18 @@ namespace W.F.P
         {
             InitializeComponent();
         }
+
+        private void FormSetting_Load(object sender, EventArgs e)
+        {
+            using(var database = new TotalData())
+            {
+                var dateTimeAdd = (from u in database.HoaDonNhaps group u.NgayNhap.Year by u.NgayNhap.Year into data 
+                                  select data.Key).ToList();
+                for (int i = 0; i < dateTimeAdd.Count; i++)
+                {
+                    yearBox.Items.Add(dateTimeAdd[i]);
+                }
+            }
+        }
     }
 }

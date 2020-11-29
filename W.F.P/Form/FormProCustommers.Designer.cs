@@ -89,9 +89,9 @@
             this.InsertImage.FlatAppearance.BorderSize = 0;
             this.InsertImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InsertImage.ForeColor = System.Drawing.Color.Gainsboro;
-            this.InsertImage.Location = new System.Drawing.Point(12, 12);
+            this.InsertImage.Location = new System.Drawing.Point(12, 197);
             this.InsertImage.Name = "InsertImage";
-            this.InsertImage.Size = new System.Drawing.Size(146, 179);
+            this.InsertImage.Size = new System.Drawing.Size(146, 68);
             this.InsertImage.TabIndex = 3;
             this.InsertImage.Text = "Image";
             this.InsertImage.UseVisualStyleBackColor = true;

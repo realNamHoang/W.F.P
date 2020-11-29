@@ -23,6 +23,8 @@ namespace W.F.P
         public virtual DbSet<Mua> Muas { get; set; }
         public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
+        public virtual DbSet<CongViec> CongViecs { get; set; }
+        public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<NuocSanXuat> NuocSanXuats { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
         public virtual DbSet<TheLoai> TheLoais { get; set; }
@@ -90,7 +92,7 @@ namespace W.F.P
                 .IsFixedLength();
 
             modelBuilder.Entity<HoaDonBan>()
-                .Property(e => e.MaKH)
+                .Property(e => e.MaKhach)
                 .IsFixedLength();
 
             modelBuilder.Entity<Mau>()
@@ -167,6 +169,26 @@ namespace W.F.P
 
             modelBuilder.Entity<TheLoai>()
                 .Property(e => e.TenLoai)
+                .IsFixedLength();
+
+            modelBuilder.Entity<CongViec>()
+                .Property(e => e.MaCongViec)
+                .IsFixedLength();
+
+            modelBuilder.Entity<CongViec>()
+                .Property(e => e.TenCongViec)
+                .IsFixedLength();
+
+            modelBuilder.Entity<KhachHang>()
+                .Property(e => e.MaKhach)
+                .IsFixedLength();
+
+            modelBuilder.Entity<KhachHang>()
+                .Property(e => e.TenKhach)
+                .IsFixedLength();
+
+            modelBuilder.Entity<KhachHang>()
+                .Property(e => e.DiaChi)
                 .IsFixedLength();
         }
     }

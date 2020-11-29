@@ -30,6 +30,7 @@
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.searchHD = new FontAwesome.Sharp.IconButton();
             this.Repost = new FontAwesome.Sharp.IconButton();
             this.Setting = new FontAwesome.Sharp.IconButton();
             this.Products = new FontAwesome.Sharp.IconButton();
@@ -40,7 +41,6 @@
             this.iconCurrent = new FontAwesome.Sharp.IconPictureBox();
             this.panelShawdor = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.searchHD = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrent)).BeginInit();
@@ -61,6 +61,30 @@
             this.panelMenu.Size = new System.Drawing.Size(220, 561);
             this.panelMenu.TabIndex = 0;
             // 
+            // searchHD
+            // 
+            this.searchHD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.searchHD.FlatAppearance.BorderSize = 0;
+            this.searchHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchHD.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.searchHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchHD.ForeColor = System.Drawing.Color.Gainsboro;
+            this.searchHD.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
+            this.searchHD.IconColor = System.Drawing.Color.Gainsboro;
+            this.searchHD.IconSize = 32;
+            this.searchHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.searchHD.Location = new System.Drawing.Point(0, 315);
+            this.searchHD.Name = "searchHD";
+            this.searchHD.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.searchHD.Rotation = 0D;
+            this.searchHD.Size = new System.Drawing.Size(220, 60);
+            this.searchHD.TabIndex = 8;
+            this.searchHD.Text = "Tìm kiếm Hóa Đơn";
+            this.searchHD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.searchHD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.searchHD.UseVisualStyleBackColor = true;
+            this.searchHD.Click += new System.EventHandler(this.searchHD_Click);
+            // 
             // Repost
             // 
             this.Repost.Dock = System.Windows.Forms.DockStyle.Top;
@@ -73,7 +97,7 @@
             this.Repost.IconColor = System.Drawing.Color.Gainsboro;
             this.Repost.IconSize = 32;
             this.Repost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Repost.Location = new System.Drawing.Point(0, 195);
+            this.Repost.Location = new System.Drawing.Point(0, 255);
             this.Repost.Name = "Repost";
             this.Repost.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.Repost.Rotation = 0D;
@@ -87,7 +111,7 @@
             // 
             // Setting
             // 
-            this.Setting.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Setting.Dock = System.Windows.Forms.DockStyle.Top;
             this.Setting.FlatAppearance.BorderSize = 0;
             this.Setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Setting.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -97,13 +121,13 @@
             this.Setting.IconColor = System.Drawing.Color.Gainsboro;
             this.Setting.IconSize = 32;
             this.Setting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Setting.Location = new System.Drawing.Point(0, 501);
+            this.Setting.Location = new System.Drawing.Point(0, 195);
             this.Setting.Name = "Setting";
             this.Setting.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.Setting.Rotation = 0D;
             this.Setting.Size = new System.Drawing.Size(220, 60);
             this.Setting.TabIndex = 6;
-            this.Setting.Text = "Setting";
+            this.Setting.Text = "Hóa Đơn Theo Quý";
             this.Setting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Setting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Setting.UseVisualStyleBackColor = true;
@@ -222,30 +246,6 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(964, 477);
             this.panelDesktop.TabIndex = 3;
-            // 
-            // searchHD
-            // 
-            this.searchHD.Dock = System.Windows.Forms.DockStyle.Top;
-            this.searchHD.FlatAppearance.BorderSize = 0;
-            this.searchHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchHD.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.searchHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchHD.ForeColor = System.Drawing.Color.Gainsboro;
-            this.searchHD.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
-            this.searchHD.IconColor = System.Drawing.Color.Gainsboro;
-            this.searchHD.IconSize = 32;
-            this.searchHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.searchHD.Location = new System.Drawing.Point(0, 255);
-            this.searchHD.Name = "searchHD";
-            this.searchHD.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.searchHD.Rotation = 0D;
-            this.searchHD.Size = new System.Drawing.Size(220, 60);
-            this.searchHD.TabIndex = 8;
-            this.searchHD.Text = "Tìm kiếm Hóa Đơn";
-            this.searchHD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.searchHD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.searchHD.UseVisualStyleBackColor = true;
-            this.searchHD.Click += new System.EventHandler(this.searchHD_Click);
             // 
             // Form1
             // 

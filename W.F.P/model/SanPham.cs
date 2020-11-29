@@ -46,7 +46,6 @@ namespace W.F.P
         public string MaNuocSX { get; set; }
 
         [Required]
-        [StringLength(10)]
         public int SoLuong { get; set; }
 
         [Required]

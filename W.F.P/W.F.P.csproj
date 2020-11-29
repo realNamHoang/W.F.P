@@ -84,6 +84,7 @@
       <DependentUpon>202011201711332_AddChiTietHDNClass.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="model\CongViec.cs" />
     <Compile Include="model\ChatLieu.cs" />
     <Compile Include="model\ChiTietHDB.cs" />
     <Compile Include="model\ChiTietHDN.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="model\Mua.cs" />
     <Compile Include="model\NhaCungCap.cs" />
     <Compile Include="model\NhanVien.cs" />
+    <Compile Include="model\KhachHang.cs" />
     <Compile Include="model\NuocSanXuat.cs" />
     <Compile Include="model\viewmodel\ViewHDN.cs" />
     <Compile Include="Program.cs" />
