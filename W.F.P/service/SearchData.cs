@@ -1,5 +1,4 @@
-﻿using System.Data.Linq.SqlClient;
-using System.Linq;
+﻿using System.Linq;
 using System.Windows.Forms;
 
 namespace W.F.P.service
@@ -35,9 +34,9 @@ namespace W.F.P.service
                 blackflag = 1;
                 using (var database = new TotalData())
                 {
-                    var query = database.SanPhams.SqlQuery("Select u from SanPham u where u.MaGiayDep like concat('%'" + Data + "'%')'").ToList<SanPham>();
+                    //var query = database.SanPhams.SqlQuery("Select u from SanPham u where u.MaGiayDep like concat('%'" + Data + "'%')'").ToList<SanPham>();
                     var querydata = from u in database.SanPhams where u.MaGiayDep.Contains(Data) select u;
-                    view.DataSource = query.ToList<SanPham>();
+                    view.DataSource = querydata.ToList<SanPham>();
                 }
             }
             return blackflag;
@@ -90,7 +89,8 @@ namespace W.F.P.service
                         var queryData = (from u in database.ChiTietHDBs
                                          join HDB in database.HoaDonBans on u.SoHDB equals HDB.SoHDB
                                          where u.MaGiayDep == DataExportImport
-                                         select new {
+                                         select new
+                                         {
                                              SoHDB = u.SoHDB,
                                              MaNV = HDB.MaNV,
                                              MaGiayDep = u.MaGiayDep,
@@ -105,7 +105,8 @@ namespace W.F.P.service
                         var extraData = (from u in database.ChiTietHDNs
                                          join HDN in database.HoaDonNhaps on u.SoHDN equals HDN.SoHDN
                                          where u.MaGiayDep == DataExportImport
-                                         select new {
+                                         select new
+                                         {
                                              SoHDN = u.SoHDN,
                                              MaNV = HDN.MaNV,
                                              MaGiayDep = u.MaGiayDep,
@@ -123,7 +124,8 @@ namespace W.F.P.service
                         var queryData = (from u in database.ChiTietHDBs
                                          join HDB in database.HoaDonBans on u.SoHDB equals HDB.SoHDB
                                          where u.MaGiayDep == DataExportImport
-                                         select new {
+                                         select new
+                                         {
                                              SoHDB = u.SoHDB,
                                              MaNV = HDB.MaNV,
                                              MaGiayDep = u.MaGiayDep,
@@ -237,7 +239,7 @@ namespace W.F.P.service
         public void TonKho(DataGridView view, Button excel)
         {
             excel.Show();
-            using(var database = new TotalData())
+            using (var database = new TotalData())
             {
                 var Data = from u in database.SanPhams
                            where u.SoLuong > 0

@@ -120,6 +120,7 @@
             this.ExportExcel.TabIndex = 5;
             this.ExportExcel.Text = "Export to Excel";
             this.ExportExcel.UseVisualStyleBackColor = true;
+            this.ExportExcel.Click += new System.EventHandler(this.ExportExcel_Click);
             // 
             // Top3
             // 
@@ -138,6 +139,7 @@
             this.Top3.TabIndex = 6;
             this.Top3.Text = "Ba Người cao Nhất";
             this.Top3.UseVisualStyleBackColor = true;
+            this.Top3.Click += new System.EventHandler(this.Top3_Click);
             // 
             // Enterbutton
             // 
@@ -156,6 +158,7 @@
             this.Enterbutton.TabIndex = 6;
             this.Enterbutton.Text = "Trong quý đó";
             this.Enterbutton.UseVisualStyleBackColor = true;
+            this.Enterbutton.Click += new System.EventHandler(this.Enterbutton_Click);
             // 
             // year
             // 

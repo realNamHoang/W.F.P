@@ -41,6 +41,8 @@
             this.iconCurrent = new FontAwesome.Sharp.IconPictureBox();
             this.panelShawdor = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.exportForm = new FontAwesome.Sharp.IconButton();
+            this.importForm = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrent)).BeginInit();
@@ -49,6 +51,8 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.importForm);
+            this.panelMenu.Controls.Add(this.exportForm);
             this.panelMenu.Controls.Add(this.searchHD);
             this.panelMenu.Controls.Add(this.Repost);
             this.panelMenu.Controls.Add(this.Setting);
@@ -247,6 +251,54 @@
             this.panelDesktop.Size = new System.Drawing.Size(964, 477);
             this.panelDesktop.TabIndex = 3;
             // 
+            // exportForm
+            // 
+            this.exportForm.Dock = System.Windows.Forms.DockStyle.Top;
+            this.exportForm.FlatAppearance.BorderSize = 0;
+            this.exportForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exportForm.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.exportForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportForm.ForeColor = System.Drawing.Color.Gainsboro;
+            this.exportForm.IconChar = FontAwesome.Sharp.IconChar.Tag;
+            this.exportForm.IconColor = System.Drawing.Color.Gainsboro;
+            this.exportForm.IconSize = 32;
+            this.exportForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exportForm.Location = new System.Drawing.Point(0, 375);
+            this.exportForm.Name = "exportForm";
+            this.exportForm.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.exportForm.Rotation = 0D;
+            this.exportForm.Size = new System.Drawing.Size(220, 60);
+            this.exportForm.TabIndex = 9;
+            this.exportForm.Text = "Nhập dữ liệu bán hàng";
+            this.exportForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exportForm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.exportForm.UseVisualStyleBackColor = true;
+            this.exportForm.Click += new System.EventHandler(this.exportForm_Click);
+            // 
+            // importForm
+            // 
+            this.importForm.Dock = System.Windows.Forms.DockStyle.Top;
+            this.importForm.FlatAppearance.BorderSize = 0;
+            this.importForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.importForm.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.importForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importForm.ForeColor = System.Drawing.Color.Gainsboro;
+            this.importForm.IconChar = FontAwesome.Sharp.IconChar.Tag;
+            this.importForm.IconColor = System.Drawing.Color.Gainsboro;
+            this.importForm.IconSize = 32;
+            this.importForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.importForm.Location = new System.Drawing.Point(0, 435);
+            this.importForm.Name = "importForm";
+            this.importForm.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.importForm.Rotation = 0D;
+            this.importForm.Size = new System.Drawing.Size(220, 60);
+            this.importForm.TabIndex = 10;
+            this.importForm.Text = "Nhập dữ liệu nhập hàng";
+            this.importForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.importForm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.importForm.UseVisualStyleBackColor = true;
+            this.importForm.Click += new System.EventHandler(this.importForm_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -283,6 +335,8 @@
         private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconButton Repost;
         private FontAwesome.Sharp.IconButton searchHD;
+        private FontAwesome.Sharp.IconButton exportForm;
+        private FontAwesome.Sharp.IconButton importForm;
     }
 }
 

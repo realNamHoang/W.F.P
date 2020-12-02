@@ -67,6 +67,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\FormExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormExport.Designer.cs">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormImport.Designer.cs">
+      <DependentUpon>FormImport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FormRepostHD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +145,12 @@
     <Compile Include="service\SearchData.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormExport.resx">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormImport.resx">
+      <DependentUpon>FormImport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormRepostHD.resx">
       <DependentUpon>FormRepostHD.cs</DependentUpon>

@@ -52,6 +52,7 @@
             this.SoLuongBox = new System.Windows.Forms.TextBox();
             this.ButtonAddData = new FontAwesome.Sharp.IconButton();
             this.RenewButton = new FontAwesome.Sharp.IconButton();
+            this.messageLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ImageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -274,6 +275,7 @@
             this.SoLuongBox.Name = "SoLuongBox";
             this.SoLuongBox.Size = new System.Drawing.Size(149, 20);
             this.SoLuongBox.TabIndex = 2;
+            this.SoLuongBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoLuongBox_KeyPress);
             // 
             // ButtonAddData
             // 
@@ -307,12 +309,23 @@
             this.RenewButton.UseVisualStyleBackColor = true;
             this.RenewButton.Click += new System.EventHandler(this.RenewButton_Click);
             // 
+            // messageLabel
+            // 
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.messageLabel.Location = new System.Drawing.Point(70, 266);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(25, 13);
+            this.messageLabel.TabIndex = 8;
+            this.messageLabel.Text = "Lưu";
+            // 
             // FormProdusterCustommer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(964, 477);
+            this.Controls.Add(this.messageLabel);
             this.Controls.Add(this.RenewButton);
             this.Controls.Add(this.ButtonAddData);
             this.Controls.Add(this.label10);
@@ -373,5 +386,6 @@
         private System.Windows.Forms.TextBox SoLuongBox;
         private FontAwesome.Sharp.IconButton ButtonAddData;
         private FontAwesome.Sharp.IconButton RenewButton;
+        private System.Windows.Forms.Label messageLabel;
     }
 }

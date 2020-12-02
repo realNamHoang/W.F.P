@@ -1,10 +1,7 @@
 namespace W.F.P
 {
-    using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("SanPham")]
     public partial class SanPham
@@ -45,7 +42,6 @@ namespace W.F.P
         [StringLength(10)]
         public string MaNuocSX { get; set; }
 
-        [Required]
         public int SoLuong { get; set; }
 
         [Required]

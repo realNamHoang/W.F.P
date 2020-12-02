@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using FontAwesome.Sharp;
 
 namespace W.F.P
 {
@@ -36,9 +29,9 @@ namespace W.F.P
             public static Color color6 = Color.FromArgb(24, 162, 251);
             public static Color color7 = Color.MediumPurple;
         }
-        private void ActivateButton(object senderBtn,Color color)
+        private void ActivateButton(object senderBtn, Color color)
         {
-            if (senderBtn!= null)
+            if (senderBtn != null)
             {
                 DisableButton();
                 currentButton = (IconButton)senderBtn;
@@ -61,7 +54,7 @@ namespace W.F.P
 
         private void DisableButton()
         {
-            if(currentButton != null)
+            if (currentButton != null)
             {
                 currentButton.BackColor = Color.FromArgb(31, 30, 68);
                 currentButton.ForeColor = Color.Gainsboro;
@@ -74,7 +67,7 @@ namespace W.F.P
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender , ColorChange.color1);
+            ActivateButton(sender, ColorChange.color1);
             OpenChildForm(new FormProdusterCustommer());
         }
 
@@ -113,7 +106,7 @@ namespace W.F.P
 
         private void OpenChildForm(Form childForm)
         {
-            if(currentChildForm != null)
+            if (currentChildForm != null)
             {
                 currentChildForm.Close();
             }
@@ -133,6 +126,18 @@ namespace W.F.P
         {
             ActivateButton(sender, ColorChange.color6);
             OpenChildForm(new FormRepostHD());
+        }
+
+        private void exportForm_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, ColorChange.color5);
+            OpenChildForm(new FormExport());
+        }
+
+        private void importForm_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, ColorChange.color4);
+            OpenChildForm(new FormImport());
         }
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace W.F.P.service
 {
@@ -20,7 +15,7 @@ namespace W.F.P.service
 
         public void CheckDataTextBox(TextBox textBox)
         {
-            if(textBox.TextLength == 0)
+            if (textBox.TextLength == 0)
             {
                 MessageBox.Show("You forgot not insert this" + textBox.Name + "?", "Error Detected in Input", MessageBoxButtons.YesNo);
                 textBox.Focus();

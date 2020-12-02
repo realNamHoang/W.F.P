@@ -139,6 +139,7 @@
             this.ExportExcel.TabIndex = 3;
             this.ExportExcel.Text = "Export to Excel";
             this.ExportExcel.UseVisualStyleBackColor = true;
+            this.ExportExcel.Click += new System.EventHandler(this.ExportExcel_Click);
             // 
             // ExtraDataView
             // 

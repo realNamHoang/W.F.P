@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using W.F.P.service;
 
@@ -39,6 +32,11 @@ namespace W.F.P
                 searchData.ControlSearchDataExportImport(DataSearchHDBox.Text, DataSearchRequestBox.Text, DGVExport, ExtraDataView, ExportExcel);
             }
 
+        }
+
+        private void ExportExcel_Click(object sender, EventArgs e)
+        {
+            exportExcel.ExportToExcel(DGVExport);
         }
     }
 }

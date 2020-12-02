@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using W.F.P.service;
 
@@ -33,7 +26,7 @@ namespace W.F.P
 
         private void DataSearchBox_KeyUp(object sender, KeyEventArgs e)
         {
-            if(e.KeyValue == 13)
+            if (e.KeyValue == 13)
             {
                 searchData.ControlSearchDataProducts(DataSearchBox.Text, DGVExport, ExportExcel);
             }
@@ -42,6 +35,11 @@ namespace W.F.P
         private void XemTonKho_Click(object sender, EventArgs e)
         {
             searchData.TonKho(DGVExport, ExportExcel);
+        }
+
+        private void ExportExcel_Click(object sender, EventArgs e)
+        {
+            exportExcel.ExportToExcel(DGVExport);
         }
     }
 }
